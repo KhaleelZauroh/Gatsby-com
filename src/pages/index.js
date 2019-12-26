@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Section from "../components/Reusable/Section"
+import Infoblock from "../components/Reusable/Infoblock"
 
 
 const IndexPage = ({data}) => (
@@ -15,6 +16,8 @@ const IndexPage = ({data}) => (
     subtitle = "This will be the subtitle"
     section = "section-background"
      />
+
+    <Infoblock heading="About Us" />
   </Layout>
 )
 
