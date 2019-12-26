@@ -20,7 +20,7 @@ export default function Infoblock({heading}) {
                             Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. 
                         </p>
 
-                        <Link to="./about/">
+                        <Link to="./about">
                             <button className="btn btn-warning btn-lg">
                                 {heading}
                             </button>
