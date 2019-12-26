@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Section from "../components/Reusable/Section"
 import Infoblock from "../components/Reusable/Infoblock"
+import Dualinfoblock from "../components/Reusable/Dualinfoblock"
 
 
 const IndexPage = ({data}) => (
@@ -18,6 +19,7 @@ const IndexPage = ({data}) => (
      />
 
     <Infoblock heading="About Us" />
+    <Dualinfoblock heading="Our Team" />
   </Layout>
 )
 
