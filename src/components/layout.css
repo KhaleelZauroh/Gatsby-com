@@ -10,3 +10,10 @@ html {
 .cart-icon {
   font-size: 2rem;
 }
+.section-background{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
