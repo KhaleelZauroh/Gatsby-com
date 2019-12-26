@@ -1,5 +1,5 @@
 import React from "react"
-
+/*funcitonal component*/
 export default function Footer() {
   return (
     <footer>
