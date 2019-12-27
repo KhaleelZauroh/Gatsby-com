@@ -31,22 +31,22 @@ export default function Dualinfoblock({ heading }) {
             </p>
           </div>
           <div className="col-4">
-            <div class="card bg-dark">
+            <div className="card bg-dark">
               <img
-                class="card-img-top"
+                className="card-img-top"
                 src="https://images.hdqwalls.com/wallpapers/bthumb/borderlands-3-minimalist-4k-53.jpg"
                 alt="image goes here"
               />
-              <div class="card-body">
-                <h5 class="card-title text-success">Click Photos</h5>
-                <p class="card-text text-white">
+              <div className="card-body">
+                <h5 className="card-title text-success">Click Photos</h5>
+                <p className="card-text text-white">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content. Some quick example text to
                   build on the card title and make up the bulk of the card's
                   content. Some quick example text to build on the card title
                   and make up the bulk of the card's content.
                 </p>
-                <a href="#" class="btn btn-warning btn-block">
+                <a href="#" className="btn btn-warning btn-block">
                   Go somewhere
                   {heading}
                 </a>

@@ -1,8 +1,12 @@
+require('dotenv').config({
+  path:`.env.development`,
+})
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter`,
-    description: `we do what we do best, we improvise`,
-    author: `@gatsbyjs`,
+    title: `Gatsby-com`,
+    description: `E Commerce website`,
+    author: `@KhaleelZauroh`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -27,6 +31,15 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    //CONTENFUL
+      {
+        resolve: `gatsby-source-contentful`,
+        options: {
+          spaceId: process.env.CONTENTFUL_SPACE_ID,
+          // Learn about environment variables: https://gatsby.dev/env-vars
+          accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        },
+      },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
