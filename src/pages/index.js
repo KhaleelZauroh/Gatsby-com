@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import Section from "../components/Reusable/Section"
 import Infoblock from "../components/Reusable/Infoblock"
 import Dualinfoblock from "../components/Reusable/Dualinfoblock"
+import Cart from "../components/Cart/Cart"
 
 
 const IndexPage = ({data}) => (
@@ -19,7 +20,8 @@ const IndexPage = ({data}) => (
      />
 
     <Infoblock heading="About Us" />
-    <Dualinfoblock heading="Our Team" />
+    <Cart mycourses={data.mycourses} />
+    <Dualinfoblock heading="Our Team" alinfoblock heading="Our Team" />
   </Layout>
 )
 
@@ -44,7 +46,7 @@ export const query = graphql`
       }
       image{
         fixed(width:200, height:120){
-          src
+          ...GatsbyContentfulFixed_tracedSVG
         }
       }
     }
