@@ -35,7 +35,7 @@ export default class Cart extends Component {
                       data-item-id={node.div}
                       data-item-name={node.title}
                       data-item-price={node.price}
-                      data-item-url="https://learncodeonline.in/"
+                      data-item-url="https://angry-cori-15473f.netlify.com/"
                       data-item-image={node.image.fixed.src}
 
                       className="btn btn-warning snip-cart-add-item"
