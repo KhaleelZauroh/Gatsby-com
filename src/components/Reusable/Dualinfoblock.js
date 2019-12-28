@@ -1,6 +1,6 @@
 import React from "react"
 import Heading from "./Heading"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 
 export default function Dualinfoblock({ heading }) {
   return (
@@ -35,7 +35,7 @@ export default function Dualinfoblock({ heading }) {
               <img
                 className="card-img-top"
                 src="https://images.hdqwalls.com/wallpapers/bthumb/borderlands-3-minimalist-4k-53.jpg"
-                alt="image goes here"
+                alt=""
               />
               <div className="card-body">
                 <h5 className="card-title text-success">Click Photos</h5>
@@ -46,11 +46,14 @@ export default function Dualinfoblock({ heading }) {
                   content. Some quick example text to build on the card title
                   and make up the bulk of the card's content.
                 </p>
-                <a href="#" className="btn btn-warning btn-block">
+                <Link to ="#" >
+<button className="btn btn-warning btn-block">
+
                   Go somewhere
                   {heading}
-                </a>
-              </div>
+</button>
+                </Link>
+\              </div>
             </div>
           </div>
         </div>

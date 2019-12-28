@@ -4,8 +4,6 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Section from "../components/Reusable/Section"
-import Infoblock from "../components/Reusable/Infoblock"
-import Dualinfoblock from "../components/Reusable/Dualinfoblock"
 import Cart from "../components/Cart/Cart"
 
 
@@ -14,20 +12,17 @@ const IndexPage = ({data}) => (
     <SEO title="Home" />
     <Section
     img={data.img.childImageSharp.fluid}
-    title=" This will be the title"
-    subtitle = "This will be the subtitle"
+    title="You Look Good You Feel Good"
+    subtitle = "Start shopping!"
     section = "section-background"
      />
-
-    <Infoblock heading="About Us" />
     <Cart mycourses={data.mycourses} />
-    <Dualinfoblock heading="Our Team" alinfoblock heading="Our Team" />
   </Layout>
 )
 
 export const query = graphql`
 {
-  img: file(relativePath: { eq: "heromain.png" }) {
+  img: file(relativePath: { eq: "diana.jpg" }) {
     childImageSharp {
       fluid {
         ...GatsbyImageSharpFluid_tracedSVG 

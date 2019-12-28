@@ -11,7 +11,6 @@ export default class Cart extends Component {
     }
   }
   render() {
-    // console.log(this.state.mycourses)
     return (
       <section className="py-5">
         <div className="container">
@@ -32,13 +31,12 @@ export default class Cart extends Component {
                       <small>{node.description.description}</small>
                     </p>
                     <button
-                      data-item-id={node.div}
+                      data-item-id={node.id}
                       data-item-name={node.title}
                       data-item-price={node.price}
                       data-item-url="https://angry-cori-15473f.netlify.com/"
                       data-item-image={node.image.fixed.src}
-
-                      className="btn btn-warning snip-cart-add-item"
+                      className="btn btn-warning snipcart-add-item"
                     >Buy Now</button>
                   </div>
                 </div>

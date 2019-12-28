@@ -1,7 +1,11 @@
 import React from "react"
+import Heading from "../Reusable/Heading";
 
-export default function Teamimgsection() {
+export default function Teamimgsection({heading}) {
   return (
+    <section className="bg-theme my-5 py-4 ">
+      <div className="container text-center">
+    <Heading title={heading} />
     <div className="row">
       <div className="col-10 col-sm-10 mx-auto">
         <div class="card-group">
@@ -61,5 +65,7 @@ export default function Teamimgsection() {
         </div>
       </div>
     </div>
+    </div>
+    </section>
   )
 }
