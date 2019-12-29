@@ -2,12 +2,27 @@ import React, { Component } from "react"
 import Heading from "../Reusable/Heading"
 import Img from "gatsby-image"
 
+
+//categories logic
+const getCaty = items => {
+   let holdItems = items.map(items => {
+     //refer contentful categories
+     return items.node.category
+   })
+   let holdCategories = new Set(holdItems)
+   let categories = Array.from(holdCategories)
+   categories = ["all", ...categories]
+   return categories
+}
+
+
 export default class Cart extends Component {
   constructor(props) {
     super(props)
     this.state = {
       courses: props.mycourses.edges,
       mycourses: props.mycourses.edges,
+      mycategories: getCaty(props.courses.edges)
     }
   }
   render() {
