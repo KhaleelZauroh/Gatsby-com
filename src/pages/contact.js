@@ -5,29 +5,25 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Section from "../components/Reusable/Section"
 import Infoblock from "../components/Reusable/Infoblock"
-import Dualinfoblock from "../components/Reusable/Dualinfoblock"
-import Teamimgsection from "../components/About/Teamimgsection"
+import Contact from "../components/Contact/Contact"
 
-
-const AboutPage = ({data}) => (
+const ContactPage = ({data}) => (
   <Layout>
     <SEO title="Home" />
     <Section
     img={data.img.childImageSharp.fluid}
-    title=" About this website"
+    title=" Contact Us"
     subtitle = ""
-    section = "about-background"
+    section = "contact us"
      />
-
-    <Dualinfoblock heading="A message from us" />
-    <Infoblock heading="About Company" />
-    <Teamimgsection />
+    <Infoblock heading="How can we help" />
+    <Contact />
   </Layout>
 )
 
 export const query = graphql`
 {
-  img: file(relativePath: { eq: "about.png" }) {
+  img: file(relativePath: { eq: "contact.png" }) {
     childImageSharp {
       fluid {
         ...GatsbyImageSharpFluid_tracedSVG 
@@ -37,4 +33,4 @@ export const query = graphql`
 
 }`
 
-export default AboutPage
+export default ContactPage

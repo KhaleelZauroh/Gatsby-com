@@ -23,11 +23,6 @@ export default class Navbar extends Component {
       },
       {
         id: 3,
-        text: "Services",
-        url: "/services",
-      },
-      {
-        id: 4,
         text: "Contact",
         url: "/contact",
       },
