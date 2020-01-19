@@ -1,6 +1,6 @@
 import React from "react"
 /*funcitonal component*/
-export default function Footer({superman}) {
+export default function Footer() {
   return (
     <footer>
       <div className="footer-block">
@@ -9,7 +9,7 @@ export default function Footer({superman}) {
             <div className="row">
               <div className="col-12 pt-2 mx-auto text-center bg-dark text-light">
 
-              <h6>Awesome copyright footer {} 2020</h6>
+              <h6>Awesome &copy; footer {2020}</h6>
 
               </div>
             </div>
