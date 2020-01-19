@@ -9,7 +9,7 @@ export default function Footer({superman}) {
             <div className="row">
               <div className="col-12 pt-2 mx-auto text-center bg-dark text-light">
 
-              <h6>Awesome copyright footer {superman} 2019</h6>
+              <h6>Awesome copyright footer {} 2020</h6>
 
               </div>
             </div>
